@@ -1,14 +1,47 @@
 .titulo{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: cornflowerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 73, 181);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.container {
+    margin: 10px;
 }
 
 .btnAgregar{
-    background-color: cadetblue;
+    background-color:rgb(53, 154, 158);
+    border-color: rgb(53, 154, 158);
+    width: 100px;
+    height: 30px;
+    color : white;
+    font-weight: bold;
+}
+
+.nuevaTarea{
+    width: 300px;
+    height: 25px;
+    background-color: rgb(215, 243, 244);
+    border-color: rgb(215, 243, 244);
+    padding-right: 5px;
+}
+
+.btnAgregar:hover {
+    background-color:  rgb(0, 115, 121);
+    border-color:rgb(0, 115, 121) ;
 }
 
 .tareas{
     border: 2px;
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
-.
+
+.lista{
+    padding: 4px;
+}
+
+body{
+    background-color: rgb(216, 233, 245);
+}
