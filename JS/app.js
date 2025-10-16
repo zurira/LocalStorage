@@ -2,7 +2,11 @@ const btnAgregar = document.querySelector(".btnAgregar");
 const nuevaTarea = document.querySelector(".nuevaTarea");
 const tareas = document.querySelector(".tareas");
 
-
+for (let i = 0; i < localStorage.length; i++) {
+  const clave = localStorage.key(i);
+  const texto = localStorage.getItem(clave);
+  agregarTarea(texto, clave);
+}
 
 btnAgregar.addEventListener("click", () => {
   const texto = nuevaTarea.value.trim();
