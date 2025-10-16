@@ -10,8 +10,10 @@ for (let i = 0; i < localStorage.length; i++) {
 
 btnAgregar.addEventListener("click", () => {
   const texto = nuevaTarea.value.trim();
+  let contador = 0;
   if (texto !== "") {
-    const id = Date.now().toString();
+    contador ++;
+    const id = "tarea"+contador; //se crea una clave única
     localStorage.setItem(id, texto);
     agregarTarea(texto, id);
     nuevaTarea.value = "";
@@ -24,10 +26,8 @@ function agregarTarea(texto, id) {
 
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
-  checkbox.id = id;
 
   const label = document.createElement("label");
-  label.htmlFor = id;
   label.textContent = texto;
 
   li.appendChild(checkbox);
