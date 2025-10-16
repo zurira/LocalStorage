@@ -7,7 +7,10 @@ const tareas = document.querySelector(".tareas");
 btnAgregar.addEventListener("click", () => {
   const texto = nuevaTarea.value.trim();
   if (texto !== "") {
-  
+    const id = Date.now().toString();
+    localStorage.setItem(id, texto);
+    agregarTarea(texto, id);
+    nuevaTarea.value = "";
   }
 });
 
@@ -27,3 +30,5 @@ function agregarTarea(texto, id) {
   li.appendChild(label);
   tareas.appendChild(li);
 }
+
+
