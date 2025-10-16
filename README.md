@@ -1,13 +1,13 @@
 # Lista de tareas
 
-#¿Qué puedes hacer?
-Agregar nuevas tareas
-Marcar tareas completadas
+# ¿Qué puedes hacer?
+1. Agregar nuevas tareas
+1. Marcar tareas completadas
 
-#Tecnologías usadas
-HTML
-CSS
-JAVASCRIPT
+# Tecnologías usadas
+- HTML
+- CSS
+- JAVASCRIPT
 
 #¿Como se usa?
 1. Abre el archivo `index.html` en tu navegador.
